@@ -15,7 +15,7 @@ function Hero({}: Props) {
         />
         <Spotlight
           className="top-10 left-full h-[80vh] w-[50vh]"
-          fill="purple"
+          fill="yellow"
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vh]" fill="blue" />
       </div>
@@ -28,9 +28,9 @@ function Hero({}: Props) {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                  <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">Dynamic Web Magic with Next.js</h2>
-                  <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words={"Transforming Concepts into Seamless  User Experience"} />
-                  <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I&apos;m Naveed, a Next.js Developer based in Guwahati</p>
+                  <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">Elevating Web Experiences with Next.js</h2>
+                  <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words={"Crafting Concepts into Effortless Elegance"} />
+                  <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hello, I&apos;m Naveed—a Next.js Developer crafting exceptional web experiences from Guwahati.</p>
                   <a href="#about">
                       
                       <MagicButton title='Show my work'

@@ -8,11 +8,11 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 export default function  Approach() {
   return (
       <section className="w-full py-20 ">
-          <h1 className="heading">My <span className="text-purple">approach</span></h1>
+          <h1 className="heading">My <span className="text-yellow-500">approach</span></h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
               <Card
-                  title="Planing & Strategy"
-                  decription={"We'll Collaborate to map out your website's goals, target audiencem and key functionalities. We'll discuss things like site structure, navigation, and content reqquirements"}
+                  title="Strategic Planning & Vision"
+                  decription={"We'll work together to define your website's goals, target audience, and essential functionalities. Our collaboration will cover aspects such as site structure, intuitive navigation, and content requirements to ensure a seamless user experience."}
                   icon={<AceternityIcon order={ 'Phase 1'} />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -20,8 +20,8 @@ export default function  Approach() {
           />
         </Card>
               <Card
-                  title="Development & Progress Update"
-                  decription={"Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."}
+                  title="Development & Milestone Updates"
+                  decription={"Once the plan is finalized, I cue up my favorite lofi playlist and immerse myself in coding. From conceptual sketches to refined code, I ensure you're informed and involved at every stage of the process."}
                   icon={<AceternityIcon order={ 'Phase 2'}/>}>
           <CanvasRevealEffect
             animationSpeed={3}
@@ -35,8 +35,8 @@ export default function  Approach() {
           
         </Card>
               <Card
-                  title="Development & Launch"
-                  decription={"This is where the magic happens! Based on the approved design, I'll translate everything into function code, building your website from the ground up"}
+                  title="From Development to Launch"
+                  decription={"This is where the magic unfolds! Using the approved design, I transform concepts into functional code, meticulously building your website from the ground up."}
                   icon={<AceternityIcon order={ 'Phase 3'}/>}>
           <CanvasRevealEffect
             animationSpeed={3}
@@ -91,7 +91,7 @@ const Card = ({
         <h2 className="dark:text-white  opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center text-3xl">
           {title}
         </h2>
-              <h2 className="dark:text-white text-sm  opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center"
+              <h2 className="dark:text-white text-sm  opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-medium group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center"
               style={{color: '#e4ecff'}}>
           {decription}
         </h2>
@@ -105,7 +105,7 @@ const AceternityIcon = ({order} : {order: string}) => {
       <div>
         <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950    text-white backdrop-blur-3xl text-2xl font-bold px-5 py-2">
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-yellow-950/75   text-white backdrop-blur-3xl text-2xl font-bold px-5 py-2">
         {order}
         </span>
         </button>

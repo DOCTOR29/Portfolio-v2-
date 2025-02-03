@@ -24,7 +24,7 @@ export function ConfettiBtn() {
           <ConfettiButton disabled={copied}>
               
               <MagicButton title={copied ? 'Email Copied' : 'Copy my email'} icon={<IoCopyOutline />}
-                otherClasses="bg-[$161A31]  "
+                otherClasses="bg-[#312816]  "
               handleClick={handleClick}
               position="left"
                   />

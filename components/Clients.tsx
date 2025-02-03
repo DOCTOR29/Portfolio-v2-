@@ -6,9 +6,9 @@ function Clients() {
   return (
     <div className='py-20' id="testimonials">
     <h1 className='heading'>
-        Kind words from {' '}
+    Gracious feedback from  {' '}
 
-        <span className='text-purple'>satified cleints</span>
+        <span className='text-yellow-500'>satified cleints</span>
     </h1>
       <div className='flex flex-col items-center max-lg:mt-10 '>
        

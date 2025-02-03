@@ -7,16 +7,16 @@ function RecentProjects() {
   return (
       <div className='py-20' id="projects">
           <h1 className='heading'>
-              A small selection of {''}
+          A curated selection of my  {''}
 
-              <span className='text-purple'>recent projects</span>
+              <span className='text-yellow-500'>recent projects</span>
           </h1>
           <div className='flex flex-wrap items-center justify-center  p-4 gap-x-24 gap-y-8 mt-10'>
-              {projects.map(({title, des,iconLists,id,img,link}) => (
-                  <div key={id} className='sm:h-[41rem] h-[32rem]  lg:min-h-[32.5rem]  flex items-center justify-center sm:w-[570px] w-[80vw]'>
-                      <PinContainer title={link} href={link}>
+              {projects.map(({title, des,iconLists,id,img,link, caseStudy}) => (
+                  <div key={id} className='sm:h-[51rem] h-[42rem]  lg:min-h-[32.5rem]  flex items-center justify-center sm:w-[570px] w-[80vw]'>
+                      <PinContainer title={caseStudy ? `${process.env.HOSTNAME}/casestudy/${link}` : link} href={caseStudy ? `${process.env.HOSTNAME}/casestudy/${link}`:link}>
                           <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] lg:h-[30vh] mb-10'>
-                              <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#131C2D]'>
+                              <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#2d2013]'>
                                   <img src={'/bg.png'} alt='bg-img'/>
                               </div>
                               <img src={img} alt={title}  className='z-10 absolute bottom-0'/>
@@ -37,8 +37,8 @@ function RecentProjects() {
                               </div>
                               <div className='flex  justify-center items-center '>
                                   
-                              <p className='flex lg:text-xl md:text-xs text-sm  text-purple'>Check Live Site</p>
-                              <FaLocationArrow  className='ms-3 ' color='#CBACF9'/>
+                              <p className='flex lg:text-xl md:text-xs text-sm  text-yellow-500'>{ caseStudy?"Read Case Study": "Check Live Site" }</p>
+                              <FaLocationArrow  className='ms-3 ' color='#F9CFAC'/>
                               </div>
                         </div>
                    </PinContainer>
